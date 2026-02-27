@@ -16,11 +16,101 @@
           "value": "#004aad"
         },
         {
+          "identifier": "brand_text_color",
+          "type": "color",
+          "description": "Text color on brand color backgrounds.",
+          "label": "Brand text color",
+          "value": "#FFFFFF"
+        },
+        {
+          "identifier": "text_color",
+          "type": "color",
+          "description": "Main text color.",
+          "label": "Text color",
+          "value": "#131929"
+        },
+        {
           "identifier": "link_color",
           "type": "color",
           "description": "Link and interactive element color.",
           "label": "Link color",
           "value": "#004aad"
+        },
+        {
+          "identifier": "hover_link_color",
+          "type": "color",
+          "description": "Link hover color.",
+          "label": "Link hover color",
+          "value": "#0060d6"
+        },
+        {
+          "identifier": "visited_link_color",
+          "type": "color",
+          "description": "Visited link color.",
+          "label": "Visited link color",
+          "value": "#004aad"
+        },
+        {
+          "identifier": "background_color",
+          "type": "color",
+          "description": "Background color.",
+          "label": "Background color",
+          "value": "#ffffff"
+        }
+      ]
+    },
+    {
+      "label": "Fonts",
+      "variables": [
+        {
+          "identifier": "heading_font",
+          "type": "list",
+          "description": "Font for headings.",
+          "label": "Heading font",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            }
+          ],
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        },
+        {
+          "identifier": "text_font",
+          "type": "list",
+          "description": "Font for body text.",
+          "label": "Text font",
+          "options": [
+            {
+              "label": "System",
+              "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+            },
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+            {
+              "label": "Georgia",
+              "value": "Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif"
+            },
+            {
+              "label": "Helvetica",
+              "value": "Helvetica, Arial, sans-serif"
+            }
+          ],
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         }
       ]
     },
@@ -41,6 +131,12 @@
           "value": true
         },
         {
+          "identifier": "favicon",
+          "type": "file",
+          "description": "Favicon displayed in browser tabs.",
+          "label": "Favicon"
+        },
+        {
           "identifier": "header_background_color",
           "type": "color",
           "description": "Background color for the header/nav bar.",
@@ -57,12 +153,47 @@
       ]
     },
     {
+      "label": "Images",
+      "variables": [
+        {
+          "identifier": "homepage_background_image",
+          "type": "file",
+          "description": "Background image for the home page hero.",
+          "label": "Homepage background image"
+        },
+        {
+          "identifier": "community_background_image",
+          "type": "file",
+          "description": "Background image for community pages.",
+          "label": "Community background image"
+        },
+        {
+          "identifier": "community_image",
+          "type": "file",
+          "description": "Image for community section.",
+          "label": "Community image"
+        },
+        {
+          "identifier": "service_catalog_hero_image",
+          "type": "file",
+          "description": "Hero image for service catalog.",
+          "label": "Service catalog hero image"
+        }
+      ]
+    },
+    {
       "label": "Hero section",
       "variables": [
         {
+          "identifier": "hero_background_image",
+          "type": "file",
+          "description": "Background image for the hero section (recommended: 1920x600px or larger).",
+          "label": "Hero background image"
+        },
+        {
           "identifier": "hero_background_color",
           "type": "color",
-          "description": "Background color of the home page hero area.",
+          "description": "Background color of the home page hero area (shows behind image).",
           "label": "Hero background color",
           "value": "#0a1628"
         },
