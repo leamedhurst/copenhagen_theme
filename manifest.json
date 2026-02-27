@@ -1,5 +1,5 @@
 {
-  "name": "Visy Copenhagen Theme",
+  "name": "VisyTheme",
   "author": "Visy",
   "version": "1.0.0",
   "api_version": 4,
@@ -11,7 +11,7 @@
         {
           "identifier": "brand_color",
           "type": "color",
-          "description": "Primary brand color used for links, buttons, and accents.",
+          "description": "Brand color for links, buttons and accents.",
           "label": "Brand color",
           "value": "#004aad"
         },
@@ -27,6 +27,19 @@
     {
       "label": "Header",
       "variables": [
+        {
+          "identifier": "logo",
+          "type": "file",
+          "description": "Logo image displayed in the header.",
+          "label": "Logo"
+        },
+        {
+          "identifier": "show_brand_name",
+          "type": "checkbox",
+          "description": "Show the brand name next to the logo.",
+          "label": "Show brand name",
+          "value": true
+        },
         {
           "identifier": "header_background_color",
           "type": "color",
@@ -59,6 +72,136 @@
           "description": "Text color inside the hero area.",
           "label": "Hero text color",
           "value": "#ffffff"
+        },
+        {
+          "identifier": "instant_search",
+          "type": "checkbox",
+          "description": "Show instant search results as the user types.",
+          "label": "Instant search",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Search",
+      "variables": [
+        {
+          "identifier": "scoped_kb_search",
+          "type": "checkbox",
+          "description": "Restrict search to knowledge base articles only.",
+          "label": "Scoped knowledge base search",
+          "value": false
+        },
+        {
+          "identifier": "scoped_community_search",
+          "type": "checkbox",
+          "description": "Restrict search to community posts only.",
+          "label": "Scoped community search",
+          "value": false
+        }
+      ]
+    },
+    {
+      "label": "Articles",
+      "variables": [
+        {
+          "identifier": "show_article_author",
+          "type": "checkbox",
+          "description": "Show the author name on article pages.",
+          "label": "Show article author",
+          "value": true
+        },
+        {
+          "identifier": "show_articles_in_section",
+          "type": "checkbox",
+          "description": "Show article list within the section on the article page.",
+          "label": "Show articles in section",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_article",
+          "type": "checkbox",
+          "description": "Show the follow button on article pages.",
+          "label": "Show follow article button",
+          "value": true
+        },
+        {
+          "identifier": "show_article_sharing",
+          "type": "checkbox",
+          "description": "Show social sharing options on article pages.",
+          "label": "Show article sharing",
+          "value": true
+        },
+        {
+          "identifier": "show_article_comments",
+          "type": "checkbox",
+          "description": "Show the comments section on article pages.",
+          "label": "Show article comments",
+          "value": true
+        },
+        {
+          "identifier": "show_recently_viewed_articles",
+          "type": "checkbox",
+          "description": "Show recently viewed articles on the article page.",
+          "label": "Show recently viewed articles",
+          "value": true
+        },
+        {
+          "identifier": "show_related_articles",
+          "type": "checkbox",
+          "description": "Show related articles on the article page.",
+          "label": "Show related articles",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Community",
+      "variables": [
+        {
+          "identifier": "show_follow_topic",
+          "type": "checkbox",
+          "description": "Show the follow button on community topic pages.",
+          "label": "Show follow topic button",
+          "value": true
+        },
+        {
+          "identifier": "show_follow_post",
+          "type": "checkbox",
+          "description": "Show the follow button on community post pages.",
+          "label": "Show follow post button",
+          "value": true
+        },
+        {
+          "identifier": "show_post_sharing",
+          "type": "checkbox",
+          "description": "Show social sharing options on community post pages.",
+          "label": "Show post sharing",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Sections",
+      "variables": [
+        {
+          "identifier": "show_follow_section",
+          "type": "checkbox",
+          "description": "Show the follow button on section pages.",
+          "label": "Show follow section button",
+          "value": true
+        }
+      ]
+    },
+    {
+      "label": "Home page",
+      "variables": [
+        {
+          "identifier": "show_recent_activity",
+          "type": "checkbox",
+          "description": "Show recent activity feed on the home page.",
+          "label": "Show recent activity",
+          "value": true
         }
       ]
     },
